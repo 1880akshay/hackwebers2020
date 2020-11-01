@@ -1,6 +1,8 @@
 # hackwebers2020
 My submission for HackWebers 2020
 
+PS-5: Develop a web/Android edutech marketplace where different creators can upload their courses which can be accessed by the registered students only. 
+
 Made with :heart: by Akshay Jain, IIT Kharagpur
 
 This repository contains frontend, backend and the database required for the app.
