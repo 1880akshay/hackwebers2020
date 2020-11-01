@@ -27,4 +27,13 @@ The code is divided into two parts, the frontend directory serves the frontend (
 2. Run `npm install` to install all dependencies.
 3. Run `npm start` to start the app. (If everything is setup correctly, a new browser tab will open at http://localhost:3000).
 
+Here are some screenshots of the app:
+
+! [ Home ] (/screenshots/home.PNG)
+! [ Student Signup ] (/screenshots/studentSignup.PNG)
+! [ Student Dashboard ] (/screenshots/studentDashboard.PNG)
+! [ Course Info ] (/screenshots/courseInfo.PNG)
+! [ Teacher Signup ] (/screenshots/teacherSignup.PNG)
+! [ Teacher Dashboard (1) ] (/screenshots/teacherDashboard(1).PNG)
+! [ Teacher Dashboard (2) ] (/screenshots/teacherDashboard(2).PNG)
 
