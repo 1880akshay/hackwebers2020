@@ -1,7 +1,9 @@
 # hackwebers2020
 My submission for HackWebers 2020
 
-This repository contains both the frontend and backend code.
+Made with :heart: by Akshay Jain, IIT Kharagpur
+
+This repository contains frontend, backend and the database required for the app.
 
 ## About the app
 It is a basic EdTech marketplace where course creators can share their courses with the registered students.
