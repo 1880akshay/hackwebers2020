@@ -1,6 +1,9 @@
 a:hover {
 	text-decoration: none;
 }
+a {
+	outline: none;
+}
 .page-content {
 	width: 100%;
 	margin:  0 auto;

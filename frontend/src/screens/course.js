@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
 const api="http://localhost:9000";
