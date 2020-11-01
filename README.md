@@ -5,6 +5,8 @@ This repository contains both the frontend and backend code.
 
 ## About the app
 It is a basic EdTech marketplace where course creators can share their courses with the registered students.
+Course Creators (Teachers) can add/ remove courses after registering and the students can access those courses after successfull registration.
+
 The code is divided into two parts, the frontend directory serves the frontend (using React), and the backend directory serves the backend (in Node/Express). 
 `hackwebers.sql` is the database which contains different tables used in the app.
 
