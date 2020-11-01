@@ -29,11 +29,11 @@ The code is divided into two parts, the frontend directory serves the frontend (
 
 Here are some screenshots of the app:
 
-! [ Home ] (/screenshots/home.PNG)
-! [ Student Signup ] (/screenshots/studentSignup.PNG)
-! [ Student Dashboard ] (/screenshots/studentDashboard.PNG)
-! [ Course Info ] (/screenshots/courseInfo.PNG)
-! [ Teacher Signup ] (/screenshots/teacherSignup.PNG)
-! [ Teacher Dashboard (1) ] (/screenshots/teacherDashboard(1).PNG)
-! [ Teacher Dashboard (2) ] (/screenshots/teacherDashboard(2).PNG)
+<img src="screenshots/home.PNG">
+<img src="screenshots/studentSignup.PNG">
+<img src="screenshots/studentDashboard.PNG">
+<img src="screenshots/courseInfo.PNG">
+<img src="screenshots/teacherSignup.PNG">
+<img src="screenshots/teacherDashboard(1).PNG">
+<img src="screenshots/teacherDashboard(2).PNG">
 
