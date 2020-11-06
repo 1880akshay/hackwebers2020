@@ -21,7 +21,7 @@ The code is divided into two parts, the frontend directory serves the frontend (
 
 ## How to setup the Database
 1. Open phpMyAdmin after configuring and starting the Apache and MySQL server in xampp
-2. Click on import option and then select the `hackwebers.sql` file provided to import the database.
+2. Click on import option (after creating a database named hackwebers) and then select the `hackwebers.sql` file provided to import the tables in the database.
 
 ## How to run the Backend
 1. In your terminal, navigate to the `backend` directory.
