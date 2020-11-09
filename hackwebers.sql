@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2020 at 03:56 PM
+-- Generation Time: Nov 09, 2020 at 01:41 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `hackwebers`
 --
+CREATE DATABASE IF NOT EXISTS `hackwebers` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `hackwebers`;
 
 -- --------------------------------------------------------
 
@@ -27,14 +29,15 @@ SET time_zone = "+00:00";
 -- Table structure for table `courses`
 --
 
-CREATE TABLE `courses` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `courses` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `teacherId` int(11) NOT NULL,
   `teacherName` varchar(255) NOT NULL,
-  `price` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `price` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `courses`
@@ -53,14 +56,15 @@ INSERT INTO `courses` (`id`, `name`, `description`, `teacherId`, `teacherName`, 
 -- Table structure for table `students`
 --
 
-CREATE TABLE `students` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `students` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `token` varchar(255) NOT NULL,
-  `tokenStatus` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `tokenStatus` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `students`
@@ -75,14 +79,15 @@ INSERT INTO `students` (`id`, `name`, `email`, `password`, `token`, `tokenStatus
 -- Table structure for table `teachers`
 --
 
-CREATE TABLE `teachers` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `teachers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `token` varchar(255) NOT NULL,
-  `tokenStatus` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `tokenStatus` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `teachers`
@@ -91,50 +96,6 @@ CREATE TABLE `teachers` (
 INSERT INTO `teachers` (`id`, `name`, `email`, `password`, `token`, `tokenStatus`) VALUES
 (1, 'Amit Kumar', 'test1@gmail.com', 'amitkumar', 'teachertest1@gmail.com@@31$10$2020..$19$16$45', 'false'),
 (2, 'Akshay Jain', 'test2@gmail.com', 'akshay123', 'teachertest2@gmail.com@@1$11$2020..$12$53$22', 'false');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `courses`
---
-ALTER TABLE `courses`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `students`
---
-ALTER TABLE `students`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `teachers`
---
-ALTER TABLE `teachers`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `courses`
---
-ALTER TABLE `courses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `students`
---
-ALTER TABLE `students`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `teachers`
---
-ALTER TABLE `teachers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
